@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evento.com</title>
+    <script type="text/javascript">
+        function total() {
+            var t = 0;
+            if (document.getElementById('c1').checked) t += 40;
+            if (document.getElementById('c2').checked) t += 20;
+            if (document.getElementById('p1').checked) t += 17;
+            if (document.getElementById('p2').checked) t += 50;
+            if (document.getElementById('p3').checked) t += 35;
+            document.getElementById('tot').innerHTML = t;
+        }
+
+        function enviar() {
+            var nome = document.getElementById('Nome').value;
+            if (nome === '' || (!document.getElementById('c1').checked && !document.getElementById('c2').checked)) {
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <form action="http://www.uerj.br">
+        <h1>Formulário de Inscrição</h1><br>
+
+        <label>Insira seu nome</label>
+        <input type="text" id="Nome" placeholder="Seu nome"><br>
+
+        <h2>Palestras</h2><br>
+        <input type="checkbox" id="p1" onclick="total();">Palestra A - R$17,00<br>
+        <input type="checkbox" id="p2" onclick="total();">Palestra B - R$50,00<br>
+        <input type="checkbox" id="p3" onclick="total();">Palestra C - R$35,00<br>
+        <br>
+
+        <h2>Cursos</h2><br>
+        <input type="checkbox" id="c1" onclick="total();">Curso A - R$40,00<br>
+        <input type="checkbox" id="c2" onclick="total();">Curso B - R$20,00<br>
+        <br>
+
+        Total: R$<span id="tot">0</span>,00<br>
+        <input type="submit" value="Inscrição" onclick="return enviar()">
+    </form>
+</body>
+</html>
