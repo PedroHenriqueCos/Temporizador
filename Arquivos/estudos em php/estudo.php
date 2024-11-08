@@ -17,3 +17,9 @@
 
     </body>
 </html>    
+
+<?php
+// Um programa php é delimitado pelas tagas <?php "? >"
+// o comando "echo" é o comando escrever do php
+// o php pode entrar no html delimitado pela sua tag
+?>
