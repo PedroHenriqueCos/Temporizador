@@ -1,14 +1,14 @@
-# Calculadora Simples em Python
+# Temporizador Simples em Python
 
-Esta é uma calculadora simples desenvolvida em Python. Ela permite realizar operações básicas como adição, subtração, multiplicação e divisão de dois números fornecidos pelo usuário.
+Um temporizador simples que permite configurar um tempo em segundos e exibe uma contagem regressiva no terminal. Ao final do período, o programa emite um alerta indicando que o tempo acabou.
 
 ## Funcionalidades
-- Adição
-- Subtração
-- Multiplicação
-- Divisão
+- Configuração de um tempo em segundos.
+- Exibição da contagem regressiva no terminal.
+- Alerta ao término do temporizador.
 
 ## Como Usar
-1. Clone o repositório.
-2. Execute o script `calculadora.py` no seu terminal.
-3. Siga as instruções para inserir os números e escolher a operação desejada.
+1. Clone este repositório.
+2. Execute o script `temporizador.py` no terminal.
+3. Insira o tempo desejado em segundos quando solicitado.
+
