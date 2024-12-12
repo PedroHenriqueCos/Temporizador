@@ -12,3 +12,4 @@ Esta é uma calculadora simples desenvolvida em Python. Ela permite realizar ope
 1. Clone o repositório.
 2. Execute o script `calculadora.py` no seu terminal.
 3. Siga as instruções para inserir os números e escolher a operação desejada.
+
